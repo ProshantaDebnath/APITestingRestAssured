@@ -1,0 +1,36 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Maven build directory
+target/
+
+# Java build output
+bin/
+
+# Test reports (TestNG, Surefire, Allure, Extent)
+test-output/
+surefire-reports/
+allure-results/
+allure-report/
+extent-reports/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# API response files (if generated during tests)
+*.json
+*.xml
+
+# Screenshots
+screenshots/
+*.png
