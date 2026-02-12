@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 public class ForgotPasswordTest {
 
 		@Test(description = "Verify is forgot password is working or not")
-		public void ForgettPasswordTest() {
+		public void forgettPasswordTest() {
 				
 			AuthService authservice = new AuthService();
 			Response response = authservice.forgotPassword("apitesting@gmail.com");

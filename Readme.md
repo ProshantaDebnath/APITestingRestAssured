@@ -13,13 +13,13 @@ This project is a Java‑based End‑to‑End API Automation Framework built usi
 
 
 ## 📂 Project Structure
-##### E2E-Automation-Framework/                 ├── src/main/java/    
-##### Core framework utilities                  ├── src/test/java/           
-##### Test cases                                ├── src/test/resources/      
-##### Config files, test data                   ├── target/                  
-##### Build output                              ├── test-output/                                      
-##### Maven dependencies                        ├── pom.xml                  
-##### Git ignore rules                          └── .gitignore 
+- E2E-Automation-Framework/.................├── src/main/java/    
+- Core framework utilities..........................├── src/test/java/           
+- Test cases...............................................├── src/test/resources/      
+- Config files, test data..............................├── target/                  
+- Build output.............................................├── test-output/                                      
+- Maven dependencies..............................├── pom.xml                  
+- Git ignore rules........................................└── .gitignore 
 
 
 ### ⚙️ Features
