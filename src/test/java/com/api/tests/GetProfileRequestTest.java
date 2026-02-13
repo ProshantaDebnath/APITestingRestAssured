@@ -12,7 +12,7 @@ import io.restassured.response.Response;
 
 public class GetProfileRequestTest {
 
-	@Test
+	@Test(description = "Verify that Profile data is successfully fetched or not")
 	public void getProfileInfoTest() {
 		
 		AuthService authservice = new AuthService();
