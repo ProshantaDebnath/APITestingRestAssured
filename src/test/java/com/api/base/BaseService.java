@@ -1,6 +1,9 @@
 package com.api.base;
 
 import static io.restassured.RestAssured.*;
+
+import java.util.HashMap;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -29,6 +32,10 @@ public class BaseService {
 	
 	protected Response getRequest(String endpoint) {
 		return requestSpecification.get(endpoint);
+	}
+	
+	protected Response getRequestQueryParams(HashMap<String, Object> payload, String endpoint) {	    
+	    return requestSpecification.queryParams(payload).get(endpoint);
 	}
 
 }

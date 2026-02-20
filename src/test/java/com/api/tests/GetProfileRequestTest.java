@@ -24,6 +24,8 @@ public class GetProfileRequestTest {
 		UserManagementService userManagementService = new UserManagementService();
 	    Response userprofileinfo = userManagementService.getProfile(loginResponse.getToken());
 	    
+	    System.out.println(loginResponse.getToken());
+	    
 	    //Deserialization
 	    UserProfileResponse profileinfo = userprofileinfo.as(UserProfileResponse.class);	 
 	   
