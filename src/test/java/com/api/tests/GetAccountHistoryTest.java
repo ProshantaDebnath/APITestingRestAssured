@@ -1,5 +1,6 @@
 package com.api.tests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.base.AuthService;
@@ -9,6 +10,7 @@ import com.api.models.response.LoginResponse;
 
 import io.restassured.response.Response;
 
+@Listeners(com.api.listeners.TestListener.class)
 public class GetAccountHistoryTest {
 
 	@Test(description = "Verify that account history is getting or not")
@@ -21,7 +23,7 @@ public class GetAccountHistoryTest {
 		
 		TransactionService transactionService = new TransactionService();
 		response = transactionService.getTransactionHistory(loginResponse.getToken(), "1605614959", 0, 10);
-		System.out.println(response.asPrettyString());
+		//System.out.println(response.asPrettyString());
 
 	}
 
