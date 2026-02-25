@@ -7,10 +7,10 @@ import com.api.models.request.SignUpRequest;
 
 import io.restassured.response.Response;
 
-public class AccountCreationTest {
+public class SignUpTest {
 	
 	@Test(description = "Verify is api create the record or not")
-	public void SignUpTest() {
+	public void signUpTest() {
 		
 		SignUpRequest signuprequest = new SignUpRequest.Builder()
 									.email("pik@gmail.com")

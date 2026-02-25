@@ -37,5 +37,9 @@ public class BaseService {
 	protected Response getRequestQueryParams(HashMap<String, Object> payload, String endpoint) {	    
 	    return requestSpecification.queryParams(payload).get(endpoint);
 	}
+	
+	protected Response getRequestpathParam(HashMap<String, String> payload, String endpoint) {	    
+	    return requestSpecification.pathParams(payload).get(endpoint);
+	}
 
 }
