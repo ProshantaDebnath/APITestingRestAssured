@@ -17,7 +17,7 @@ allure-report/
 extent-reports/
 
 # Logs
-Logs/
+logs/
 
 # OS-specific files
 .DS_Store

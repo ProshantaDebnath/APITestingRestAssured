@@ -6,6 +6,31 @@
 	<artifactId>RestAssuredAPITesting</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<!-- Build version update before suite running on CLI-->
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<maven.build.sourceEncoding>UTF-8</maven.build.sourceEncoding>
+	</properties>
+
+	<!-- CLI Plugins-->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>
+							${suite}.xml
+						</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 
 	<!-- pom.xml -->
 	<dependencies>
@@ -55,13 +80,13 @@
 			<artifactId>log4j-api</artifactId>
 			<version>2.20.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>2.20.0</version>
 		</dependency>
-		
+
 	</dependencies>
 
 
